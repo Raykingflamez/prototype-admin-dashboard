@@ -7,7 +7,7 @@
           <template slot="header">
             <div class="row">
               <div class="col-sm-6" :class="isRTL ? 'text-right' : 'text-left'">
-                <h5 class="card-category">{{$t('dashboard.totalShipments')}}</h5>
+                <h5 class="card-category">{{$t('Total Monthly Rides')}}</h5>
                 <h2 class="card-title">{{$t('dashboard.performance')}}</h2>
               </div>
               <div class="col-sm-6">
@@ -46,7 +46,7 @@
       <div class="col-lg-4" :class="{'text-right': isRTL}">
         <card type="chart">
           <template slot="header">
-            <h5 class="card-category">{{$t('dashboard.totalShipments')}}</h5>
+            <h5 class="card-category">{{$t('Daily Rides')}}</h5>
             <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary "></i> 763,215</h3>
           </template>
           <div class="chart-area">
@@ -63,7 +63,7 @@
       <div class="col-lg-4" :class="{'text-right': isRTL}">
         <card type="chart">
           <template slot="header">
-            <h5 class="card-category">{{$t('dashboard.dailySales')}}</h5>
+            <h5 class="card-category">{{$t('Daily Income Generated')}}</h5>
             <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info "></i> 3,500€</h3>
           </template>
           <div class="chart-area">
@@ -77,7 +77,7 @@
         </card>
       </div>
       <div class="col-lg-4" :class="{'text-right': isRTL}">
-        <card type="chart">
+        <!-- <card type="chart">
           <template slot="header">
             <h5 class="card-category">{{$t('dashboard.completedTasks')}}</h5>
             <h3 class="card-title"><i class="tim-icons icon-send text-success "></i> 12,100K</h3>
@@ -90,7 +90,7 @@
                         :extra-options="greenLineChart.extraOptions">
             </line-chart>
           </div>
-        </card>
+        </card> -->
       </div>
     </div>
     <div class="row">
@@ -162,9 +162,9 @@
         purpleLineChart: {
           extraOptions: chartConfigs.purpleChartOptions,
           chartData: {
-            labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+            labels: ['MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT', 'SUN'],
             datasets: [{
-              label: "Data",
+              label: "Daily Rides",
               fill: true,
               borderColor: config.colors.primary,
               borderWidth: 2,
@@ -177,7 +177,7 @@
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
               pointRadius: 4,
-              data: [80, 100, 70, 80, 120, 80],
+              data: [80, 100, 70, 80, 120, 80, 100],
             }]
           },
           gradientColors: config.colors.primaryGradient,
@@ -210,15 +210,15 @@
         blueBarChart: {
           extraOptions: chartConfigs.barChartOptions,
           chartData: {
-            labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
+            labels: ['MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT', 'SUN'],
             datasets: [{
-              label: "Countries",
+              label: "Daily revenue",
               fill: true,
               borderColor: config.colors.info,
               borderWidth: 2,
               borderDash: [],
               borderDashOffset: 0.0,
-              data: [53, 20, 10, 80, 100, 45],
+              data: [53, 20, 10, 80, 100, 45, 30],
             }]
           },
           gradientColors: config.colors.primaryGradient,

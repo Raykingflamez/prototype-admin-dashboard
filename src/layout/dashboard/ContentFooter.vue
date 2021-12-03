@@ -3,18 +3,18 @@
     <div class="container-fluid">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="http://www.creative-tim.com">
-            Creative Tim
+          <a class="nav-link" href="https://ollie.ng/">
+            Ollie Ride
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://blog.creative-tim.com">
-            Blog
+            <!-- Blog -->
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://www.creative-tim.com/license">
-            Licenses
+            <!-- Licenses -->
           </a>
         </li>
       </ul>
