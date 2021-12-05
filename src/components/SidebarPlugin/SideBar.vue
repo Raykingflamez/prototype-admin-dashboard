@@ -14,7 +14,7 @@
           <div class="logo-img"
                :class="{'logo-img-rtl': $rtl.isRTL}">
             <img
-              src="./"
+              src="./ollie.png"
               alt="">
           </div>
         </a>
